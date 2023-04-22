@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Roblox Verification</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Roblox Verification</h1>
+        <form id="verification-form" onsubmit="return submitForm();">
+            <label for="discord-username">Discord Username:</label>
+            <input type="text" id="discord-username" name="discord-username" required>
+            <br>
+            <label for="roblox-username">Roblox Username:</label>
+            <input type="text" id="roblox-username" name="roblox-username" required>
+            <br>
+            <button type="button" onclick="generateCode()">Generate Code</button>
+            <br>
+            <label for="verification-code">Verification Code:</label>
+            <input type="text" id="verification-code" name="verification-code" readonly>
+            <br>
+            <button type="submit">Check</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
